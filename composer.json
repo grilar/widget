@@ -1,0 +1,26 @@
+{
+    "name": "grilar/widget",
+    "description": "Widget package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Widget\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Widget\\Providers\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "Grilar\\Widget\\Facades\\Widget",
+                "WidgetGroup": "Grilar\\Widget\\Facades\\WidgetGroup"
+            }
+        }
+    }
+}
